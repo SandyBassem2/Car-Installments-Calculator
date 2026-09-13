@@ -18,7 +18,7 @@
     <div  class="card bg-light d-flex justify-content-center align-items-center flex-column mt-2 p-4 rounded-4 bg-opacity-50 shadow-lg w-50  ms-auto me-5">
         <h1 > Car Details</h1>
          <form class="d-flex flex-column w-75 gap-2">
-                    <div  class="form-group">
+                    <div  class="form-group" >
                      <label for="Car model"class="fw-bold ">Car Model</label>
                     <input type="text" id=" Car model" class="form-control mt-2 mb-3" placeholder="Car Model" required> 
                     </div>
@@ -28,7 +28,7 @@
                     <input type="text" id=" Model year" class="form-control mt-2 mb-3" placeholder="Model Year" required> 
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group"id="Price">
                      <label for="Car Price"class="fw-bold"> Car Price</label>
                     <input type="text" id="Car Price" class="form-control mt-2 mb-3" placeholder="Car Price" required> 
                     </div>
@@ -36,19 +36,23 @@
                      <label for="Down Payment"class="fw-bold"> Down Payment</label>
                     <input type="text" id="Down Payment" class="form-control mt-2 mb-3" placeholder="Down Payment" required> 
                     </div>
+                    <div class="form-group">
                        <label for="Installment Period"class="fw-bold"> Installment Period</label>
                     <input type="number"    min="0" id="Installment Period" class="form-control mt-2 mb-3" placeholder="Installment Period" required> 
                     </div>
-                    
-                    
-
-                    
-
                
         </form>
+        <div id="button1">
+            <button  class="btn btn-primary rounded-4"> Calculate</button>
+        </div>
+        <div id="output" class="me-auto mt-4">
+            <h1 class=" fs-2 w-100"> Monthely Installment </h1>
+            <p class="fs-5 border border-3 rounded-4 border-dark p-3 mt-3">Monthely Installment</p>
+
+        </div>
        
     </div>
 
-
+<script src="home.js"></script>
 </body>
 </html>
